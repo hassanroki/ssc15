@@ -1,0 +1,123 @@
+@media only screen and (max-width: 767px) {
+
+  /* Menu Section Start */
+  .top-menu .top-menu-content {
+    display: none !important;
+  }
+
+  .top-menu .top-menu-right {
+    width: 100%;
+  }
+
+  /* Menu Section End */
+
+  /* History Section Start */
+  .history h2 {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 30px;
+  }
+
+  .history h4 {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 30px;
+  }
+
+  /* History Section End */
+
+
+  
+  /* Contact Us File Start */
+  .contact-form {
+    order: 2;
+  }
+
+  .message-image {
+    order: 1;
+    margin-bottom: 20px;
+  }
+
+  /* Contact Us File End */
+
+}
+
+
+@media only screen and (max-width: 480px) {
+
+  /* Main Menu Start */
+  .main-menu a img {
+    display: none !important;
+  }
+
+  /* Main Menu End */
+
+
+  /* Banner Section Start */
+  .banner h4 {
+    font-size: 22px;
+    line-height: 30px;
+  }
+
+  .banner .left-container a {
+    font-size: 14px;
+    line-height: 30px;
+    padding: 3px 25px;
+  }
+
+  /* Banner Section End */
+
+
+  /* Celebration Section Start */
+  .Celebration .content h2 {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .Celebration .content h4 {
+    font-size: 24px;
+    line-height: 30px;
+    padding-top: 20px;
+  }
+
+  /* Celebration Section End */
+
+
+
+  /* History Section Start */
+  .history {
+    padding: 50px 0px;
+  }
+
+  .history h2 {
+    font-size: 16px;
+    line-height: 24px;
+    padding-bottom: 10px;
+  }
+
+  /* History Section End */
+
+
+
+  /* Footer Section Start */
+  .footer .footerDiv,
+  .footer .footerDivEnd {
+    text-align: center;
+  }
+
+  .footer .footerDiv {
+    padding-bottom: 30px;
+  }
+
+  .footer h4 {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 30px;
+  }
+
+  /* Footer Section End */
+
+}
+
+
+@media only screen and (max-width: 360px) {}
