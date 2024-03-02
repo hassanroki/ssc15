@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\GenderController;
+use Illuminate\Routing\Router;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -79,5 +81,8 @@ Route::get('/dashboard/users', function(){
 Route::get('/dashboard/merit', function(){
     return view('backend.merit.merit');
 });
+
+
+Route::resource('dashboard/genders', GenderController::class);
 
 // Backend End
