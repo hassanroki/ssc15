@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\GenderController;
+use App\Http\Controllers\SemesterController;
 use Illuminate\Routing\Router;
 use Illuminate\Support\Facades\Route;
 
@@ -82,7 +83,10 @@ Route::get('/dashboard/merit', function(){
     return view('backend.merit.merit');
 });
 
-
+// Gender Table
 Route::resource('dashboard/genders', GenderController::class);
+
+// Semester Table
+Route::resource('dashboard/semesters', SemesterController::class);
 
 // Backend End
