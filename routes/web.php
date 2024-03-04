@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\GenderController;
+use App\Http\Controllers\InstituteController;
 use App\Http\Controllers\SemesterController;
 use Illuminate\Routing\Router;
 use Illuminate\Support\Facades\Route;
@@ -88,5 +89,8 @@ Route::resource('dashboard/genders', GenderController::class);
 
 // Semester Table
 Route::resource('dashboard/semesters', SemesterController::class);
+
+// Institute Table
+Route::resource('dashboard/institute', InstituteController::class);
 
 // Backend End

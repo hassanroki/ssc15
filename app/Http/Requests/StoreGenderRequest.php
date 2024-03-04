@@ -23,13 +23,14 @@ class StoreGenderRequest extends FormRequest
     {
         return [
             //
-            'sex'       => 'required|max:255'
+            'sex'       => 'required|unique:genders|max:255',
         ];
     }
 
-    public function message() {
+    public function messages() {
         return [
-            'sex.required' => "Gender field must be required!"
+            'sex.required' => "Gender field must be required!",
+            'sex.unique' => "Already Exists! Try Another Gender",
         ];
     }
 

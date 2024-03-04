@@ -17,7 +17,7 @@
     <hr>
     <div class="semester">
         <div class="container mt-4">
-            <h2>Class Table</h2>
+            <h2>Class Lists</h2>
             <div class="table-responsive">
                 <table class="table table-bordered">
                     <thead>

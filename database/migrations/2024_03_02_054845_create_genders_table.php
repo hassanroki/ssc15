@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('genders', function (Blueprint $table) {
             $table->id();
-            $table->string('sex');
+            $table->string('sex')->unique();
             $table->timestamps();
         });
     }
@@ -21,8 +21,12 @@ return new class extends Migration
     /**
      * Reverse the migrations.
      */
-    public function down(): void
+    public function down()
     {
-        Schema::dropIfExists('genders');
+        // If you ever need to rollback, you can remove the unique constraint
+        Schema::table('genders', function (Blueprint $table) {
+            $table->dropUnique(['sex']);
+        });
     }
+
 };

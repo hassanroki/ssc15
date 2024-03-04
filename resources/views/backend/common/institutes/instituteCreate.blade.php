@@ -2,30 +2,30 @@
 
 @section('content')
     <div class="pb-3">
-        <a href="{{ route('semesters.index') }}" class="btn btn-primary">Back</a>
+        <a href="{{ route('institute.index') }}" class="btn btn-primary">Back</a>
     </div>
     <hr>
-    <div class="semesterCreate">
+    <div class="instituteCreate">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-8">
                     <div class="card">
                         <div class="card-header">
-                            <h2 class="text-center">New Class Add</h2>
+                            <h2 class="text-center">New Institute Add</h2>
                         </div>
 
                         <div class="card-body">
-                            <form method="POST" action="{{ route('semesters.store') }}">
+                            <form method="POST" action="{{ route('institute.store') }}">
                                 @csrf
 
                                 <div class="form-group row">
-                                    <label for="semester" class="col-md-4 col-form-label text-md-right">Semester</label>
+                                    <label for="institute" class="col-md-4 col-form-label text-md-right">Institute Name</label>
 
                                     <div class="col-md-6">
-                                        <input type="text" placeholder="New Class" name="semesterName" class="form-control"
+                                        <input type="text" placeholder="Enter Institute Name" name="instituteName" class="form-control"
                                             required>
                                     </div>
-                                    @error('semesterName')
+                                    @error('instituteName')
                                         <span class="text-danger">{{ $message }}</span>
                                     @enderror
                                 </div>

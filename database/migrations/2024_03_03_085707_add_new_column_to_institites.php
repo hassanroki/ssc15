@@ -11,10 +11,9 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('semesters', function (Blueprint $table) {
-            $table->id();
-            $table->string('semesterName')->unique();
-            $table->timestamps();
+        Schema::table('institutes', function (Blueprint $table) {
+            // Add Column
+            $table->string('instituteName')->unique()->after('id');
         });
     }
 
@@ -23,6 +22,9 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('semesters');
+        Schema::table('institutes', function (Blueprint $table) {
+            // Delete Column
+            $table->dropColumn('instituteName');
+        });
     }
 };

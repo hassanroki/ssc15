@@ -16,7 +16,7 @@
 
     <hr>
     <div class="container mt-4">
-        <h2>Gender Table</h2>
+        <h2>Gender Lists</h2>
         <div class="table-responsive">
             <table class="table table-bordered">
                 <thead>
