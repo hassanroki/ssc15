@@ -67,6 +67,7 @@
                     <a class="collapse-item" href="{{ route('genders.index') }}">Genders</a>
                     <a class="collapse-item" href="{{ route('semesters.index') }}">Classes</a>
                     <a class="collapse-item" href="{{ route('institute.index') }}">Institutes</a>
+                    <a class="collapse-item" href="{{ route('departments.index') }}">Departments</a>
                 </div>
             </div>
         </li>

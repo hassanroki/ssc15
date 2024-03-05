@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\DepartmentController;
 use App\Http\Controllers\GenderController;
 use App\Http\Controllers\InstituteController;
 use App\Http\Controllers\SemesterController;
@@ -92,5 +93,8 @@ Route::resource('dashboard/semesters', SemesterController::class);
 
 // Institute Table
 Route::resource('dashboard/institute', InstituteController::class);
+
+// Department
+Route::resource('/dashboard/departments', DepartmentController::class);
 
 // Backend End

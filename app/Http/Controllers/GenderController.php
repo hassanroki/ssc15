@@ -58,7 +58,7 @@ class GenderController extends Controller
      */
     public function edit(Gender $gender)
     {
-        //
+        // Edit
         return view('backend.common.genders.genderEdit', compact('gender'));
     }
 
