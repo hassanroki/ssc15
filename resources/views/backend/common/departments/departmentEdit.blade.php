@@ -22,7 +22,7 @@
                                     <label for="department" class="col-md-4 col-form-label text-md-right">Department Name</label>
 
                                     <div class="col-md-6">
-                                        <input type="text" placeholder="Edit Department" name="departmentName" class="form-control"
+                                        <input type="text" id="department" placeholder="Edit Department" name="departmentName" class="form-control"
                                             value="{{ $department->departmentName }}" required>
                                     </div>
                                     @error('departmentName')

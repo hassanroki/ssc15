@@ -22,7 +22,7 @@
                                     <label for="semester" class="col-md-4 col-form-label text-md-right">Semester</label>
 
                                     <div class="col-md-6">
-                                        <input type="text" placeholder="New Class" name="semesterName" class="form-control"
+                                        <input type="text" id="semester" placeholder="New Class" name="semesterName" class="form-control"
                                             required>
                                     </div>
                                     @error('semesterName')

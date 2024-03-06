@@ -68,6 +68,7 @@
                     <a class="collapse-item" href="{{ route('semesters.index') }}">Classes</a>
                     <a class="collapse-item" href="{{ route('institute.index') }}">Institutes</a>
                     <a class="collapse-item" href="{{ route('departments.index') }}">Departments</a>
+                    <a class="collapse-item" href="{{ route('studentInfo.index') }}">Batch 15 Student Info </a>
                 </div>
             </div>
         </li>
@@ -311,7 +312,7 @@
         <footer class="sticky-footer bg-white">
             <div class="container my-auto">
                 <div class="copyright text-center my-auto">
-                    <span>Copyright &copy; Your Website 2020</span>
+                    <span>Copyright &copy; 2024 SSC Batch 20215 || All Rights Reserved</span>
                 </div>
             </div>
         </footer>

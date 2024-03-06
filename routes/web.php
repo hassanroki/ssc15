@@ -4,6 +4,7 @@ use App\Http\Controllers\DepartmentController;
 use App\Http\Controllers\GenderController;
 use App\Http\Controllers\InstituteController;
 use App\Http\Controllers\SemesterController;
+use App\Http\Controllers\StudentInfoController;
 use Illuminate\Routing\Router;
 use Illuminate\Support\Facades\Route;
 
@@ -96,5 +97,8 @@ Route::resource('dashboard/institute', InstituteController::class);
 
 // Department
 Route::resource('/dashboard/departments', DepartmentController::class);
+
+// Batch 15 Student Info
+Route::resource('/dashboard/studentInfo', StudentInfoController::class);
 
 // Backend End
