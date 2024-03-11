@@ -15,4 +15,9 @@ class StudentInfo extends Model
         'fatherName',
         'motherName',
     ];
+
+    // Student Table Relationship
+    public function student() {
+        return $this->hasMany(Student::class);
+    }
 }

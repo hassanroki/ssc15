@@ -12,4 +12,9 @@ class Department extends Model
     protected $fillable = [
         'departmentName',
     ];
+
+    // Student Table Relationship
+    public function student() {
+        return $this->hasMany(Student::class);
+    }
 }

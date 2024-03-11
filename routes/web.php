@@ -2,8 +2,10 @@
 
 use App\Http\Controllers\DepartmentController;
 use App\Http\Controllers\GenderController;
+use App\Http\Controllers\HomeController;
 use App\Http\Controllers\InstituteController;
 use App\Http\Controllers\SemesterController;
+use App\Http\Controllers\StudentController;
 use App\Http\Controllers\StudentInfoController;
 use Illuminate\Routing\Router;
 use Illuminate\Support\Facades\Route;
@@ -25,13 +27,11 @@ Route::get('/welcome', function () {
     return view('welcome');
 });
 
-Route::get('/', function(){
-    return view('frontend.index');
-});
+// Home
+Route::get('/', [HomeController::class, 'index'])->name('home');
 
-Route::get('/home', function(){
-    return view('frontend.index');
-});
+// Students List
+Route::get('/studentList', [HomeController::class, 'studentsList'])->name('studentList');
 
 Route::get('/celebration', function(){
     return view('frontend.celebration');
@@ -41,9 +41,7 @@ Route::get('/important', function(){
     return view('frontend.important');
 });
 
-Route::get('/studentsList', function(){
-    return view('frontend.studentsList');
-});
+
 
 Route::get('/gallery', function(){
     return view('frontend.gallery');
@@ -51,10 +49,6 @@ Route::get('/gallery', function(){
 
 Route::get('/contact', function(){
     return view('frontend.contact');
-});
-
-Route::get('/registration', function(){
-    return view('frontend.registration');
 });
 
 Route::get('/login', function(){
@@ -101,4 +95,8 @@ Route::resource('/dashboard/departments', DepartmentController::class);
 // Batch 15 Student Info
 Route::resource('/dashboard/studentInfo', StudentInfoController::class);
 
+// Student
+Route::resource('/dashboard/students', StudentController::class);
+
 // Backend End
+

@@ -55,14 +55,29 @@
             </div>
         </li>
 
-        <!-- Nav Item - Common Table Collapse Menu -->
+        <!-- Nav Item - Students Pages Collapse Menu -->
         <li class="nav-item">
             <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseThree"
-                aria-expanded="true" aria-controls="collapseTwo">
+                aria-expanded="true" aria-controls="collapseThree">
+                <i class="fas fa-fw fa-cog"></i>
+                <span>Students</span>
+            </a>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionSidebar">
+                <div class="bg-white py-2 collapse-inner rounded">
+                    <a class="collapse-item" href="{{ route('students.index') }}">Student Lists </a>
+                    <a class="collapse-item" href="cards.html">Registration</a>
+                </div>
+            </div>
+        </li>
+
+        <!-- Nav Item - Common Table Collapse Menu -->
+        <li class="nav-item">
+            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseFour"
+                aria-expanded="true" aria-controls="collapseFour">
                 <i class="fas fa-fw fa-cog"></i>
                 <span>Common Features</span>
             </a>
-            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionSidebar">
+            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionSidebar">
                 <div class="bg-white py-2 collapse-inner rounded">
                     <a class="collapse-item" href="{{ route('genders.index') }}">Genders</a>
                     <a class="collapse-item" href="{{ route('semesters.index') }}">Classes</a>

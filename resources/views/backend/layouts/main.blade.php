@@ -28,9 +28,9 @@
 <body id="page-top">
 
     <!-- Page Wrapper -->
-    {{-- Sidebar Include--}}
-        @include('backend.layouts.sidebar')
-        
+    {{-- Sidebar Include --}}
+    @include('backend.layouts.sidebar')
+
     <!-- End of Page Wrapper -->
 
     <!-- Scroll to Top Button-->
@@ -65,15 +65,19 @@
     <!-- Core plugin JavaScript-->
     <script src="{{ asset('backend/vendor/jquery-easing/jquery.easing.min.js') }}"></script>
 
+    {{-- Ajx jQuery --}}
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+
     <!-- Custom scripts for all pages-->
     <script src="{{ asset('backend/js/sb-admin-2.min.js') }}"></script>
 
-        <!-- Table Page level plugins -->
-        <script src="{{ asset('backend/vendor/datatables/jquery.dataTables.min.js') }}"></script>
-        <script src="{{ asset('backend/vendor/datatables/dataTables.bootstrap4.min.js') }}"></script>
-    
-        <!-- Table Page level custom scripts -->
-        <script src="{{ asset('backend/js/demo/datatables-demo.js') }}"></script>
+    <!-- Table Page level plugins -->
+    <script src="{{ asset('backend/vendor/datatables/jquery.dataTables.min.js') }}"></script>
+    <script src="{{ asset('backend/vendor/datatables/dataTables.bootstrap4.min.js') }}"></script>
+
+    <!-- Table Page level custom scripts -->
+    <script src="{{ asset('backend/js/demo/datatables-demo.js') }}"></script>
 
 </body>
 

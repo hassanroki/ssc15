@@ -5,35 +5,43 @@
     <div class="registration">
         <div class="container">
             <div class="row">
-                <h4 class="bg-success p-3 text-white">"Exclusively for those who completed their SSC in the year 2015 and studied at Rasulpur Mahtabia School & College batch 2015, a simplified registration process awaits. Enroll now"</h4>
+                <h4 class="bg-success p-3 text-white">"Exclusively for those who completed their SSC in the year 2015 and
+                    studied at Rasulpur Mahtabia School & College batch 2015, a simplified registration process awaits.
+                    Enroll now"</h4>
                 <form class="row g-3 border p-3">
                     <h2>Personal Information</h2>
                     <div class="col-md-6">
-                        <label for="studentRoll" class="form-label">Student Roll</label>
-                        <input type="number" class="form-control" id="studentRoll" name="studentRoll"
-                            placeholder="Enter Your Roll">
+                        <label for="studentInfoId" class="form-label">Roll</label>
+                        <input list="studentId" class="form-control" name="studentInfoId" id="studentInfoId">
+
+                        <datalist id="studentId">
+                            @foreach ($studentInfos as $studentInfo)
+                                <option value="{{ $studentInfo->roll }}"></option>
+                            @endforeach
+                        </datalist>
                     </div>
                     <div class="col-md-6">
-                        <label for="studentName" class="form-label">Student Name</label>
-                        <input type="text" class="form-control" id="studentName" name="studentName"
-                            placeholder="Enter Your Name">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="name" name="name"
+                            placeholder="Enter Your Name" readonly>
                     </div>
                     <div class="col-md-6">
                         <label for="fatherName" class="form-label">Father Name</label>
                         <input type="text" class="form-control" id="fatherName" name="fatherName"
-                            placeholder="Enter Your Father Name">
+                            placeholder="Enter Your Father Name" readonly>
                     </div>
                     <div class="col-md-6">
                         <label for="motherName" class="form-label">Mother Name</label>
                         <input type="text" class="form-control" id="motherName" name="motherName"
-                            placeholder="Enter Your Mother Name">
+                            placeholder="Enter Your Mother Name" readonly>
                     </div>
                     <div class="col-md-6">
-                        <label for="division" class="form-label">Department</label>
-                        <select class="form-select" aria-label="Default" id="division">
-                            <option selected>Select Your Department</option>
-                            <option value="1" name="science">Science</option>
-                            <option value="2" name="arts">Arts</option>
+                        <label for="departmentId" class="form-label">Department</label>
+                        <select class="form-select" aria-label="Default" id="departmentId">
+                            <option value="">Select Department</option>
+                            @foreach ($departments as $department)
+                                <option value="{{ $department->id }}">{{ $department->departmentName }}</option>
+                            @endforeach
                         </select>
                     </div>
                     <div class="col-md-6">
@@ -42,9 +50,18 @@
                             placeholder="Enter Your Email">
                     </div>
                     <div class="col-md-6">
-                        <label for="phone" class="form-label">Mobile Number</label>
-                        <input type="number" class="form-control" id="phone" name="phone"
+                        <label for="mobile" class="form-label">Mobile Number</label>
+                        <input type="number" class="form-control" id="mobile" name="mobile"
                             placeholder="Enter Your Mobile Number">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="genderId" class="form-label">Gender</label>
+                        <select class="form-select" aria-label="Default" id="genderId">
+                            <option selected>Select Your Gender</option>
+                            @foreach ($genders as $gender)
+                                <option value="{{ $gender->id }}">{{ $gender->sex }}</option>
+                            @endforeach
+                        </select>
                     </div>
                     <div class="col-12">
                         <label for="presentAddress" class="form-label">Present Address</label>
@@ -57,14 +74,14 @@
                             placeholder="Enter Your Permanent Address">
                     </div>
                     <div class="col-12">
-                        <label for="formFile" class="form-label">Upload Passport Size Formal Photo</label>
-                        <input class="form-control" type="file" id="formFile">
+                        <label for="photo" class="form-label">Upload Passport Size Formal Photo</label>
+                        <input class="form-control" type="file" id="photo" name="photo">
                     </div>
 
                     <h2>Employment Status</h2>
                     <div class="col-md-6">
-                        <label for="department" class="form-label">Department</label>
-                        <select class="form-select" aria-label="Default" id="department">
+                        <label for="occupation" class="form-label">Department</label>
+                        <select class="form-select" aria-label="Default" id="occupation">
                             <option selected>Select Your Department</option>
                             <option value="1" name="studies">Higher Studies/Training</option>
                             <option value="2" name="company">Industry/Company</option>
@@ -87,22 +104,28 @@
                     <ul class="ps-5 list-group list-group-flush text-white">
                         <li class="list-group-item bg-warning text-white">Must Read Then Filup</li>
                         <li class="list-group-item bg-danger text-white">Per Person Only 1,000 Tk</li>
-                        <li class="list-group-item bg-danger text-white">Accompanying Guest Tk 500 per person (Maximum 2 Persons)</li>
+                        <li class="list-group-item bg-danger text-white">Accompanying Guest Tk 500 per person (Maximum 2
+                            Persons)</li>
                     </ul>
                     <div class="col-md-6">
                         <label for="guest" class="form-label">Guest Or Only Single</label>
                         <select class="form-select" aria-label="Default" id="guest">
-                            <option selected>Single</option>
-                            <option value="1" name="oneGuest">One Guest</option>
-                            <option value="1" name="twoGuest">Two Guest</option>
-                          </select>
+                            <option selected value="1000" name="1000">Single</option>
+                            <option value="1" name="1500">One Guest</option>
+                            <option value="1" name="2000">Two Guest</option>
+                        </select>
                     </div>
 
                     <h2>Set Password</h2>
                     <div class="col-md-6">
                         <label for="password" class="form-label">Password</label>
-                        <input type="password" class="form-control" id="password"
-                            placeholder="Enter Password" name="password">
+                        <input type="password" class="form-control" id="password" placeholder="Enter Password"
+                            name="password">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="confirmPassword" class="form-label">Confirm Password</label>
+                        <input type="confirmPassword" class="form-control" id="confirmPassword"
+                            placeholder="Enter Confirm Password" name="confirmPassword">
                     </div>
 
                     <div class="col-12">
@@ -113,4 +136,6 @@
         </div>
     </div>
     {{-- Registration Form Section End --}}
+
+
 @endsection

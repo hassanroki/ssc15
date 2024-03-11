@@ -13,10 +13,10 @@ class Gender extends Model
         'sex',
     ];
 
-    // // Relation Student Table
-    // public function students()
-    // {
-    //     return $this->hasMany(Student::class);
-    // }
+    // Relation Student Table
+    public function students()
+    {
+        return $this->hasMany(Student::class);
+    }
 
 }

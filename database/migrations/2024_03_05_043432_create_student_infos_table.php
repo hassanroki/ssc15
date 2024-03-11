@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('student_infos', function (Blueprint $table) {
             $table->id();
-            $table->integer('roll')->unique();
+            $table->integer('roll')->unsigned()->index();
             $table->string('studentName');
             $table->string('fatherName');
             $table->string('motherName');

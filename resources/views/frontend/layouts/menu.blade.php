@@ -10,7 +10,7 @@
                 <div class="navbar-collapse">
                   <ul class="navbar-nav m-auto">
                     <li class="nav-item">
-                      <a class="nav-link" href="/registration"><i class="fa-regular fa-user"></i> Registration</a>
+                      <a class="nav-link" href="{{ route('students.create') }}"><i class="fa-regular fa-user"></i> Registration</a>
                     </li>
                     <li class="nav-item">
                       <a class="nav-link" href="/login">Login</a>
@@ -29,9 +29,9 @@
       
   <nav class="navbar navbar-expand-md bg-body-tertiary sticky-top">
       <div class="container">
-          <a class="navbar-brand" href="/home">
+          <a class="navbar-brand" href="{{ route('home') }}">
           <img src="{{ asset('frontend/images/logo1.png') }}" alt="logo" class="img-fluid">
-          </a><a href="/home" class="btn"><p><span>Rasulpur</span> <br>Mahtabia School & College</p></a>
+          </a><a href="{{ route('home') }}" class="btn"><p><span>Rasulpur</span> <br>Mahtabia School & College</p></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
               aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -39,7 +39,7 @@
           <div class="collapse navbar-collapse justify-content-end menu" id="navbarNavDropdown">
               <ul class="navbar-nav">
                   <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="/home">Home</a>
+                      <a class="nav-link active" aria-current="page" href="{{ route('home') }}">Home</a>
                   </li>
                   <li class="nav-item">
                       <a class="nav-link" href=/celebration>Celebration</a>
@@ -48,7 +48,7 @@
                       <a class="nav-link" href="/important">Important</a>
                   </li>
                   <li class="nav-item">
-                      <a class="nav-link" href="/studentsList">Student List</a>
+                      <a class="nav-link" href="/studentList">Student List</a>
                   </li>
                   <li class="nav-item">
                       <a class="nav-link" href="/gallery">Gallery</a>

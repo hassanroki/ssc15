@@ -1,46 +1,42 @@
-<div class="studentsList" id="studentsList">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <h2>Student List</h2>
-                <hr>
-
-                <!-- Student Table -->
-                <table class="table">
+<!-- DataTales Student Information -->
+<div class="container py-5">
+    <div class="card shadow mb-4">
+        <div class="card-header py-3">
+            <h6 class="m-0 font-weight-bold text-primary">Student Information</h6>
+        </div>
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                     <thead>
                         <tr>
-                            <th>Serial</th>
-                            <th>Name</th>
-                            <th>Department</th>
+                            <th style="border-bottom: 1px solid #ddd;">SL</th>
+                            <th style="border-bottom: 1px solid #ddd;">Roll</th>
+                            <th style="border-bottom: 1px solid #ddd;">Name</th>
+                            <th style="border-bottom: 1px solid #ddd;">Father Name</th>
+                            <th style="border-bottom: 1px solid #ddd;">Mother Name</th>
                         </tr>
                     </thead>
-                    <tbody>
-                        <!-- Sample Data (Replace with your dynamic data) -->
+                    <tfoot>
                         <tr>
-                            <td>1</td>
-                            <td>John Doe</td>
-                            <td>Computer Science</td>
+                            <th style="border-bottom: 1px solid #ddd;">SL</th>
+                            <th style="border-bottom: 1px solid #ddd;">Roll</th>
+                            <th style="border-bottom: 1px solid #ddd;">Name</th>
+                            <th style="border-bottom: 1px solid #ddd;">Father Name</th>
+                            <th style="border-bottom: 1px solid #ddd;">Mother Name</th>
                         </tr>
-                        <!-- Add more rows as needed -->
-
+                    </tfoot>
+                    <tbody>
+                        @foreach ($studentInfos as $key => $studentInfo)
+                            <tr>
+                                <td style="border-bottom: 1px solid #ddd;">{{ $key + 1 }}</td>
+                                <td style="border-bottom: 1px solid #ddd;">{{ $studentInfo->roll }}</td>
+                                <td style="border-bottom: 1px solid #ddd;">{{ $studentInfo->studentName }}</td>
+                                <td style="border-bottom: 1px solid #ddd;">{{ $studentInfo->fatherName }}</td>
+                                <td style="border-bottom: 1px solid #ddd;">{{ $studentInfo->motherName }}</td>
+                            </tr>
+                        @endforeach
                     </tbody>
                 </table>
-
-                <!-- Pagination -->
-                <nav aria-label="Page navigation">
-                    <ul class="pagination">
-                        <li class="page-item disabled">
-                            <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
-                        </li>
-                        <li class="page-item"><a class="page-link" href="#">1</a></li>
-                        <li class="page-item"><a class="page-link" href="#">2</a></li>
-                        <li class="page-item"><a class="page-link" href="#">3</a></li>
-                        <!-- Add more page numbers as needed -->
-                        <li class="page-item">
-                            <a class="page-link" href="#">Next</a>
-                        </li>
-                    </ul>
-                </nav>
             </div>
         </div>
     </div>

@@ -12,7 +12,7 @@
 @section('message')
     <div class="row">
         <div class="col-md-8 offset-md-2 text-center">
-            <a href="/" class="btn btn-primary">Home Page</a>
+            <a href="{{ route('home') }}" class="btn btn-primary">Home Page</a>
         </div>
     </div>
 @endsection

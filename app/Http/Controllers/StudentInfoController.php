@@ -12,12 +12,13 @@ class StudentInfoController extends Controller
     /**
      * Display a listing of the resource.
      */
+    // Controller method 1
     public function index()
     {
-        // Index
-        $data['studentInfos']   = StudentInfo::all();
+        $data['studentInfos'] = StudentInfo::all();
         return view('backend.common.studentInfos.studentInfos', $data);
     }
+
 
     /**
      * Show the form for creating a new resource.
@@ -73,9 +74,9 @@ class StudentInfoController extends Controller
     public function update(StudentInfoUpdateFormRequest $request, StudentInfo $studentInfo)
     {
         // Form Validation
-       $request->validated();
+        $request->validated();
 
-       // Data Update
+        // Data Update
         $studentInfo->update($request->all());
 
         // Confirmation Message
