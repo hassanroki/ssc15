@@ -62,3 +62,29 @@ function previewImage(event) {
   }
   reader.readAsDataURL(event.target.files[0]);
 }
+
+// Password Visible
+document.addEventListener('DOMContentLoaded', function() {
+  const togglePassword = document.getElementById('togglePassword');
+  const passwordInput = document.getElementById('password');
+  const toggleConfirmPassword = document.getElementById('toggleConfirmPassword');
+  const confirmPasswordInput = document.getElementById('confirm_password');
+
+  togglePassword.addEventListener('click', function() {
+      togglePassword.classList.toggle('active');
+      if (passwordInput.type === 'password') {
+          passwordInput.type = 'text';
+      } else {
+          passwordInput.type = 'password';
+      }
+  });
+
+  toggleConfirmPassword.addEventListener('click', function() {
+      toggleConfirmPassword.classList.toggle('active');
+      if (confirmPasswordInput.type === 'password') {
+          confirmPasswordInput.type = 'text';
+      } else {
+          confirmPasswordInput.type = 'password';
+      }
+  });
+});

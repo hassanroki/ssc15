@@ -123,8 +123,13 @@
                         <!-- Password -->
                         <div class="mb-3">
                             <label for="password" class="form-label">Password</label>
-                            <input type="password" class="form-control" id="password" name="password"
-                                placeholder="New Password" required>
+                            <div class="input-group">
+                                <input type="password" class="form-control" id="password" name="password"
+                                    placeholder="New Password" required>
+                                <button type="button" class="btn btn-outline-secondary" id="togglePassword">
+                                    <i class="fa-solid fa-eye"></i>
+                                </button>
+                            </div>
                         </div>
                         @error('password')
                             <span class="text-danger">{{ $message }}</span>
@@ -133,12 +138,18 @@
                         <!-- Confirm Password -->
                         <div class="mb-3">
                             <label for="confirm_password" class="form-label">Confirm Password</label>
-                            <input type="password" class="form-control" id="confirm_password"
-                                name="password_confirmation" placeholder="Confirm Password" required>
+                            <div class="input-group">
+                                <input type="password" class="form-control" id="confirm_password"
+                                    name="password_confirmation" placeholder="Confirm Password" required>
+                                <button type="button" class="btn btn-outline-secondary" id="toggleConfirmPassword">
+                                    <i class="fa-solid fa-eye"></i>
+                                </button>
+                            </div>
                         </div>
                         @error('password_confirmation')
                             <span class="text-danger">{{ $message }}</span>
                         @enderror
+
 
                     </div>
                 </div>
