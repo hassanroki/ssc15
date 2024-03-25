@@ -1,14 +1,14 @@
-*{
+* {
     padding: 0;
     margin: 0;
 }
 
 /* Top-menu Start */
-.top-menu{
+.top-menu {
     background-color: #2D3E50;
 }
 
-.top-menu .top-menu-content p{
+.top-menu .top-menu-content p {
     font-family: 'Montserrat', sans-serif;
     font-size: 13px;
     font-weight: 400;
@@ -17,11 +17,11 @@
     margin: 0;
 }
 
-.top-menu .top-menu-right{
+.top-menu .top-menu-right {
     background-color: #86BC42;
 }
 
-.top-menu .top-menu-right ul li a{
+.top-menu .top-menu-right ul li a {
     font-family: 'Montserrat', sans-serif;
     font-size: 13px;
     font-weight: 400;
@@ -29,9 +29,10 @@
     color: #FFFFFF;
 }
 
-.top-menu .top-menu-right ul li a:hover{
+.top-menu .top-menu-right ul li a:hover {
     color: #2d3e50;
 }
+
 /* Top-menu End */
 
 /* Main Menu Start */
@@ -39,20 +40,20 @@
     position: relative;
     z-index: 1000;
     transition: 0.3s;
-  }
-  
+}
+
 .fixed-navbar {
     position: fixed;
     top: 0;
     width: 100%;
 }
 
-.main-menu a img{
+.main-menu a img {
     max-width: 100px;
     max-height: 100px;
 }
 
-.main-menu p{
+.main-menu p {
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     font-weight: 700;
@@ -60,12 +61,12 @@
     text-transform: uppercase;
 }
 
-.main-menu p span{
+.main-menu p span {
     color: #86bc42;
     font-size: 22px;
 }
 
-.main-menu .menu ul li a{
+.main-menu .menu ul li a {
     font-family: 'Montserrat', sans-serif;
     font-size: 12px;
     font-weight: 400;
@@ -75,21 +76,22 @@
     padding: 10px 0px;
 }
 
-.main-menu .menu ul li a:hover{
+.main-menu .menu ul li a:hover {
     color: #86bc42;
     border-bottom: 1px solid #86BC42;
     padding-bottom: 9px;
 }
+
 /* Main Menu End */
 
-.banner{
+.banner {
     background-image: url('/frontend/images/banner.png');
     background-repeat: no-repeat;
     background-size: cover;
     padding: 90px 0px;
 }
 
-.banner h2{
+.banner h2 {
     font-family: 'Montserrat', sans-serif;
     font-size: 24px;
     font-weight: 400;
@@ -98,7 +100,7 @@
     text-transform: uppercase;
 }
 
-.banner h4{
+.banner h4 {
     font-family: 'Montserrat', sans-serif;
     font-size: 28px;
     font-weight: 400;
@@ -107,7 +109,7 @@
     text-transform: uppercase;
 }
 
-.banner .left-container a{
+.banner .left-container a {
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     font-weight: 400;
@@ -120,12 +122,12 @@
 }
 
 /* Celebration Section Start */
-.Celebration{
+.Celebration {
     background-color: #2D3E50;
     padding-bottom: 50px;
 }
 
-.Celebration .content h2{
+.Celebration .content h2 {
     font-family: 'Montserrat', sans-serif;
     font-size: 30px;
     font-weight: 500;
@@ -135,7 +137,7 @@
     padding: 30px 10px;
 }
 
-.Celebration .content h4{
+.Celebration .content h4 {
     font-family: 'Montserrat', sans-serif;
     font-size: 32px;
     font-weight: 500;
@@ -144,7 +146,7 @@
     padding-top: 30px;
 }
 
-.Celebration .content p{
+.Celebration .content p {
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     font-weight: 400;
@@ -152,15 +154,16 @@
     color: #FFFFFF;
     text-align: justify;
 }
+
 /* Celebration Section End */
 
 /* History Section Start */
-.history{
+.history {
     background-color: #F2F2F2;
     padding: 90px 0px;
 }
 
-.history h2{
+.history h2 {
     font-family: 'Montserrat', sans-serif;
     font-size: 30px;
     font-weight: 700;
@@ -170,7 +173,7 @@
     padding-bottom: 30px;
 }
 
-.history h4{
+.history h4 {
     font-family: 'Montserrat', sans-serif;
     font-size: 24px;
     font-weight: 700;
@@ -179,7 +182,7 @@
     text-align: left;
 }
 
-.history p{
+.history p {
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     font-weight: 400;
@@ -187,17 +190,18 @@
     color: #40427F;
     text-align: justify;
 }
+
 /* History Section End */
 
 /* Important Date Section Start */
-.important{
+.important {
     background-image: url('/frontend/images/important.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     padding: 90px 0px;
 }
 
-.important h2{
+.important h2 {
     font-family: 'Montserrat', sans-serif;
     font-size: 30px;
     font-weight: 700;
@@ -208,7 +212,7 @@
     text-transform: uppercase;
 }
 
-.important h4{
+.important h4 {
     font-family: 'Montserrat', sans-serif;
     font-size: 30px;
     font-weight: 600;
@@ -219,7 +223,7 @@
     text-transform: capitalize;
 }
 
-.important p{
+.important p {
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     font-weight: 500;
@@ -228,17 +232,18 @@
     text-align: center;
     text-transform: capitalize;
 }
+
 /* Important Date Section End */
 
 /* Footer Start */
 
-.footer{
+.footer {
     background-color: #2D3E50;
     padding: 50px 0px;
     margin-top: 90px;
 }
 
-.footer h4{
+.footer h4 {
     font-family: 'Montserrat', sans-serif;
     font-size: 24px;
     font-weight: 800;
@@ -246,11 +251,11 @@
     color: #FFFFFF;
 }
 
-.footer h4 span{
+.footer h4 span {
     color: #86BC42;
 }
 
-.footer p{
+.footer p {
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     font-weight: 400;
@@ -259,7 +264,7 @@
     margin: 0;
 }
 
-.footer a{
+.footer a {
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     font-weight: 400;
@@ -267,17 +272,18 @@
     color: #FFFFFF;
 }
 
-.footer a:hover{
+.footer a:hover {
     color: #7AB04A;
 }
+
 /* Footer End */
 
 /* CopyWright Start */
-.copyWright{
+.copyWright {
     background-color: #86BC42;
 }
 
-.copyWright p{
+.copyWright p {
     font-family: 'Montserrat', sans-serif;
     font-size: 12px;
     font-weight: 400;
@@ -286,6 +292,7 @@
     padding: 10px 0px;
     margin: 0;
 }
+
 /* CopyWright End */
 
 
@@ -294,11 +301,11 @@
 
 /* Registration File Start */
 /* Registration */
-.registration{
+.registration {
     padding: 30px 0px 90px 0px;
 }
 
-.registration form h2{
+.registration form h2 {
     font-family: 'Montserrat', sans-serif;
     font-size: 24px;
     font-weight: 500;
@@ -307,15 +314,16 @@
     background-color: #86BC42;
     padding: 10px 10px;
 }
+
 /* Registration File End */
 
 
 /* Profile File Start */
-.profile{
+.profile {
     padding: 90px 0px;
 }
 
-.profile .top-content h2{
+.profile .top-content h2 {
     font-family: 'Montserrat', sans-serif;
     font-size: 32px;
     font-weight: 500;
@@ -324,7 +332,7 @@
     text-align: center;
 }
 
-.profile .top-content p{
+.profile .top-content p {
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     font-weight: 500;
@@ -334,7 +342,7 @@
     padding: 10px 0px;
 }
 
-.profile .rightSide h4{
+.profile .rightSide h4 {
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
     font-weight: 500;
@@ -342,22 +350,24 @@
     color: #009933;
 }
 
-.profile .rightSide .table th, .profile .rightSide .table td{
+.profile .rightSide .table th,
+.profile .rightSide .table td {
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     font-weight: 400;
     line-height: 22px;
     color: #222222;
 }
+
 /* Profile File End */
 
 
 /* Student List Template File Start */
-.studentsList{
+.studentsList {
     padding: 90px 0px;
 }
 
-.studentsList h2{
+.studentsList h2 {
     font-family: 'Montserrat', sans-serif;
     font-size: 32px;
     font-weight: 500;
@@ -366,15 +376,16 @@
     text-align: center;
     padding-bottom: 15px;
 }
+
 /* Student List Template File End */
 
 /* Gallery Section Start */
-.gallery{
+.gallery {
     padding-bottom: 90px;
     background-color: #F2F2F2;
 }
 
-.gallery h2{
+.gallery h2 {
     font-family: 'Montserrat', sans-serif;
     font-size: 32px;
     font-weight: 500;
@@ -383,14 +394,13 @@
     text-align: center;
     padding-bottom: 15px;
 }
+
 /* Gallery Section End */
 
 /* Contact File Start */
-.contact{
 
-}
 
-.contact h2{
+.contact h2 {
     font-family: 'Montserrat', sans-serif;
     font-size: 32px;
     font-weight: 500;
@@ -399,4 +409,14 @@
     text-align: center;
     padding-bottom: 15px;
 }
+
 /* Contact File End */
+
+
+/* Merit File Start */
+.meritsShow .profile-img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Merit File End */

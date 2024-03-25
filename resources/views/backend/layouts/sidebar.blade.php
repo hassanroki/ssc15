@@ -50,7 +50,7 @@
             <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                 <div class="bg-white py-2 collapse-inner rounded">
                     <a class="collapse-item" href="{{ url('/dashboard/merit') }}">Merit List</a>
-                    <a class="collapse-item" href="cards.html">Registration</a>
+                    <a class="collapse-item" href="{{ route('merit.create') }}">Registration</a>
                 </div>
             </div>
         </li>

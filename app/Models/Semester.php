@@ -12,4 +12,9 @@ class Semester extends Model
     protected $fillable = [
         'semesterName',
     ];
+
+    // Relation Merit Table
+    public function merits() {
+        return $this->hasMany(Merit::class);
+    }
 }

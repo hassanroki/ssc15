@@ -12,4 +12,9 @@ class Institute extends Model
     protected $fillable = [
         'instituteName',
     ];
+
+    // Relation Merit Table
+    public function merits() {
+        return $this->hasMany(Merit::class);
+    }
 }

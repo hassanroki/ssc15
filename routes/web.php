@@ -4,6 +4,7 @@ use App\Http\Controllers\DepartmentController;
 use App\Http\Controllers\GenderController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\InstituteController;
+use App\Http\Controllers\MeritController;
 use App\Http\Controllers\SemesterController;
 use App\Http\Controllers\StudentController;
 use App\Http\Controllers\StudentInfoController;
@@ -51,6 +52,10 @@ Route::get('/contact', function(){
     return view('frontend.contact');
 });
 
+Route::get('/merit', function(){
+    return view('frontend.merit');
+});
+
 Route::get('/login', function(){
     return view('frontend.login');
 });
@@ -76,9 +81,10 @@ Route::get('/dashboard/users', function(){
     return view('backend.users.users');
 });
 
-Route::get('/dashboard/merit', function(){
-    return view('backend.merit.merit');
-});
+Route::get('/merit', function(){
+    return view('frontend.merit');
+ });
+ 
 
 // Gender Table
 Route::resource('dashboard/genders', GenderController::class);
@@ -97,6 +103,9 @@ Route::resource('/dashboard/studentInfo', StudentInfoController::class);
 
 // Student
 Route::resource('/dashboard/students', StudentController::class);
+
+// Merit
+Route::resource('/dashboard/merit', MeritController::class);
 
 // Backend End
 

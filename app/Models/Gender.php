@@ -19,4 +19,9 @@ class Gender extends Model
         return $this->hasMany(Student::class);
     }
 
+    // Relation Merit Table
+    public function merits() {
+        return $this->hasMany(Merit::class);
+    }
+
 }
